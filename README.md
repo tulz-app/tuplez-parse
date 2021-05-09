@@ -79,4 +79,4 @@ Iurii Malchenko – [@yurique](https://twitter.com/yurique) / [keybase.io/yuriqu
 
 ## License
 
-`tuplez` is provided under the [MIT license](https://github.com/tulz-app/tuplez/blob/main/LICENSE.md).
+`tuplez-parse` is provided under the [MIT license](https://github.com/tulz-app/tuplez-parse/blob/main/LICENSE.md).
