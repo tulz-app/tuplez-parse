@@ -14,8 +14,6 @@ class ProductConcatTests {
     )
   }
 
-  P.charIn('1') ~ P.char('/') ~ P.charIn('2')
-
   @Test def `Unit+Scalar`(): Unit = {
     testParser(
       parser = P.char('0') ~~ P.charIn('1'),

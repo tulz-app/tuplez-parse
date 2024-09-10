@@ -10,7 +10,7 @@ inThisBuild(
     (Test / publishArtifact) := false,
     scalaVersion := ScalaVersions.v213,
     crossScalaVersions := Seq(
-      ScalaVersions.v3RC3,
+      ScalaVersions.v3,
       ScalaVersions.v213,
       ScalaVersions.v212
     ),
@@ -30,8 +30,8 @@ inThisBuild(
   )
 )
 
-lazy val `cats-parse-version` = "0.3.3"
-lazy val `tuplez-version`     = "0.3.6"
+lazy val `cats-parse-version` = "1.0.0"
+lazy val `tuplez-version`     = "0.4.0"
 
 lazy val `tuplez-parse` =
   crossProject(JVMPlatform, JSPlatform)
@@ -54,22 +54,6 @@ lazy val commonSettings = Seq(
     "junit"         % "junit"           % "4.13.2" % Test,
     ("com.novocode" % "junit-interface" % "0.11"   % Test).exclude("junit", "junit-dep")
   ),
-  (Compile / doc / scalacOptions) ~= (_.filterNot(
-    Set(
-      "-scalajs",
-      "-deprecation",
-      "-explain-types",
-      "-explain",
-      "-feature",
-      "-language:existentials,experimental.macros,higherKinds,implicitConversions",
-      "-unchecked",
-      "-Xfatal-warnings",
-      "-Ykind-projector",
-      "-from-tasty",
-      "-encoding",
-      "utf8",
-    )
-  )),
   versionPolicyIntention :=
     (CrossVersion.partialVersion(scalaVersion.value) match {
       case Some((3, _)) => {
