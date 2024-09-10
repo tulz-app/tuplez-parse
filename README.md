@@ -6,12 +6,12 @@ A syntax extension for [cats-parse](https://github.com/typelevel/cats-parse) for
 
 Based on the [tuplez](https://github.com/tulz-app/tuplez) library.
 
-Published for Scala `2.12`, `2.13` and `3.0.0-RC3`, JVM and Scala.js 1.5.1+.
+Published for Scala `2.12`, `2.13` and `3.3.3`, JVM and Scala.js 1.16.0+.
 
 ## Adding to a project
 
 ```scala
-"app.tulz" %%% "tuplez-parse" % "0.3.0"
+"app.tulz" %%% "tuplez-parse" % "0.4.0"
 ```
 
 Additionally, one of the following dependencies is required (see [tuplez](https://github.com/tulz-app/tuplez)). 
@@ -21,22 +21,22 @@ so it will not be transitively added to your project.
 
 ```scala
 // tupleN + scalar, scalar + tupleN, tupleN + tupleM, up to Tuple22
-"app.tulz" %%% "tuplez-full" % "0.3.6"
+"app.tulz" %%% "tuplez-full" % "0.4.0"
 
 // or
 
 // tupleN + scalar, scalar + tupleN, tupleN + tupleM, up to Tuple10
-"app.tulz" %%% "tuplez-full-light" % "0.3.6"
+"app.tulz" %%% "tuplez-full-light" % "0.4.0"
 
 // or
 
 // tupleN + scalar, up to Tuple22
-"app.tulz" %%% "tuplez-basic" % "0.3.6"
+"app.tulz" %%% "tuplez-basic" % "0.4.0"
 
 // or
 
 // tupleN + scalar, up to Tuple10 
-"app.tulz" %%% "tuplez-basic-light" % "0.3.6" 
+"app.tulz" %%% "tuplez-basic-light" % "0.4.0" 
 ```
 
 ## Extension method
